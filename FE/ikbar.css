@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+}
+
+header, nav, aside, main, footer {
+    padding: 10px;
+    border: 1px solid #ddd;
+	margin:5px;
+	
+   
+}
+
+header {
+    background-color: #00FFFF;
+	background-image:url("https://pbs.twimg.com/media/Cq8R4mlWAAAKL7I.jpg");
+    text-align: center;
+	height:120px;
+	color:white;
+}
+header a{
+	color:blue;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+	background-color:black;
+}
+nav a{
+	color:blue;
+}
+
+.container {
+    display: flex;
+	flex:2;
+	
+}
+
+aside {
+    flex: 1;
+    min-width: 100px;
+	height:fit-content;
+	background-color:#F8F8FF;
+}
+.sidebar{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+table {
+	width:100%;
+}
+th	{
+	background-color:black;
+	color:white;
+}
+main {
+    flex: 2;
+	justify-content:center;
+	height:fit-content;
+	text-align:justify;
+	background-color:#F8F8FF;
+}
+main h2	{
+	text-align:center;
+}
+main h4	{
+	text-align:center;
+	color:blue;
+}
+.content{
+	display:flex;
+	gap:10px;
+	
+}
+.ikbar-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10%;
+}
+
+footer {
+    text-align: center;
+	background-color:black;
+	color:white;
+	bottom:0px;
+	
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        max-width: 100px;
+    }
+}
